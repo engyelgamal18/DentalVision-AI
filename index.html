@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DentalVision AI | Engy Elgamal</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Manrope:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+        body{
+            font-family:"Inter",sans-serif;
+            background:#F8FAFC;
+            color:#111827;
+        }
+
+        .hero{
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:140px 8% 80px;
+            background:#F8FAFC;
+        }
+
+        .hero-container{
+            width:100%;
+            max-width:1200px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:60px;
+            flex-wrap:wrap;
+        }
+
+        .hero-text{
+            flex:1;
+            min-width:320px;
+        }
+
+        .hero-tag{
+            color:#0E7490;
+            font-size:0.95rem;
+            font-weight:600;
+            margin-bottom:15px;
+        }
+
+        h1{
+            font-family:"Manrope",sans-serif;
+            font-size:3.5rem;
+            line-height:1.15;
+            margin-bottom:25px;
+            color:#111827;
+        }
+
+        .hero-text p{
+            font-size:1.1rem;
+            line-height:1.8;
+            color:#4B5563;
+            max-width:580px;
+            margin-bottom:35px;
+        }
+
+        .btn{
+            display:inline-block;
+            text-decoration:none;
+            background:#0E7490;
+            color:white;
+            padding:15px 34px;
+            border-radius:10px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#2563EB;
+        }
+
+        .hero-image{
+            flex:1;
+            min-width:300px;
+            text-align:center;
+        }
+
+        .hero-image img{
+            width:100%;
+            max-width:430px;
+        }
+
+        @media(max-width:768px){
+
+            .hero-container{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .hero-text p{
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+        }
+/* ================= ABOUT SECTION ================= */
+
+.about{
+    padding:90px 8%;
+    background:#FFFFFF;
+}
+
+.about-container{
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.about-text{
+    flex:1;
+    min-width:320px;
+}
+
+.section-label{
+    color:#0E7490;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.about h2{
+    font-family:"Manrope",sans-serif;
+    font-size:2.4rem;
+    color:#111827;
+    margin-bottom:25px;
+}
+
+.about p{
+    font-size:1.05rem;
+    line-height:1.9;
+    color:#4B5563;
+    margin-bottom:20px;
+}
+
+.workflow-card{
+
+    flex:1;
+    min-width:320px;
+
+    background:#F8FAFC;
+    border:1px solid #E5E7EB;
+    border-radius:18px;
+    padding:35px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.workflow-card h3{
+
+    font-family:"Manrope",sans-serif;
+    color:#111827;
+    margin-bottom:30px;
+
+}
+
+.workflow-step{
+
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    margin-bottom:22px;
+
+}
+
+.workflow-step span{
+
+    width:36px;
+    height:36px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+
+    flex-shrink:0;
+
+}
+
+.workflow-step p{
+
+    margin:0;
+    line-height:1.7;
+
+}
+
+@media(max-width:768px){
+
+    .about-container{
+
+        flex-direction:column;
+
+    }
+
+    .about h2{
+
+        font-size:2rem;
+
+    }
+
+}
+/* ================= KEY FEATURES ================= */
+
+.features{
+
+    padding:90px 8%;
+    background:#F8FAFC;
+
+}
+
+.features-container{
+
+    max-width:1200px;
+    margin:auto;
+
+}
+
+.features-heading{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.features h2{
+
+    font-family:"Manrope",sans-serif;
+    font-size:2.5rem;
+    color:#111827;
+    margin-bottom:20px;
+
+}
+
+.features-intro{
+
+    max-width:700px;
+    margin:auto;
+
+    font-size:1.05rem;
+    line-height:1.8;
+    color:#4B5563;
+
+}
+
+.features-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    border:1px solid #E5E7EB;
+
+    transition:.3s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.feature-icon{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    font-family:"Manrope",sans-serif;
+
+    color:#111827;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#4B5563;
+
+    line-height:1.7;
+
+}
+/* ================= AI WORKFLOW ================= */
+
+.workflow{
+
+    padding:90px 8%;
+    background:#FFFFFF;
+
+}
+
+.workflow-container{
+
+    max-width:1200px;
+    margin:auto;
+
+}
+
+.workflow-heading{
+
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.workflow h2{
+
+    font-family:"Manrope",sans-serif;
+    font-size:2.5rem;
+    color:#111827;
+    margin-bottom:20px;
+
+}
+
+.workflow-intro{
+
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#4B5563;
+
+}
+
+.workflow-timeline{
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:15px;
+    flex-wrap:wrap;
+
+}
+
+.workflow-box{
+
+    background:#F8FAFC;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    width:240px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.workflow-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.workflow-number{
+
+    width:55px;
+    height:55px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:"Manrope",sans-serif;
+    font-size:1.4rem;
+
+}
+
+.workflow-box h3{
+
+    font-family:"Manrope",sans-serif;
+    color:#111827;
+    margin-bottom:15px;
+
+}
+
+.workflow-box p{
+
+    color:#4B5563;
+    line-height:1.7;
+
+}
+
+.workflow-arrow{
+
+    font-size:2rem;
+    color:#06B6D4;
+    align-self:center;
+
+}
+
+@media(max-width:900px){
+
+    .workflow-timeline{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .workflow-arrow{
+
+        transform:rotate(90deg);
+
+    }
+
+}
+/* ================= PROJECT GALLERY ================= */
+
+.gallery{
+
+    padding:90px 8%;
+    background:#F8FAFC;
+
+}
+
+.gallery-container{
+
+    max-width:1200px;
+    margin:auto;
+
+}
+
+.gallery-heading{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.gallery h2{
+
+    font-family:"Manrope",sans-serif;
+    font-size:2.5rem;
+    color:#111827;
+    margin-bottom:20px;
+
+}
+
+.gallery-intro{
+
+    max-width:700px;
+    margin:auto;
+    color:#4B5563;
+    line-height:1.8;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+
+}
+
+.gallery-card{
+
+    background:white;
+    border:1px solid #E5E7EB;
+    border-radius:18px;
+    overflow:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.gallery-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.10);
+
+}
+
+.gallery-card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+
+}
+
+.gallery-card h3{
+
+    font-family:"Manrope",sans-serif;
+    text-align:center;
+    padding:20px;
+    color:#111827;
+
+}
+/* ================= TECHNOLOGIES SECTION ================= */
+
+.technologies{
+
+    padding:90px 8%;
+    background:#FFFFFF;
+
+}
+
+.technologies-container{
+
+    max-width:1200px;
+    margin:auto;
+
+}
+
+.technologies-heading{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.technologies h2{
+
+    font-family:"Manrope",sans-serif;
+    font-size:2.5rem;
+    color:#111827;
+    margin-bottom:20px;
+
+}
+
+.technologies-intro{
+
+    max-width:700px;
+    margin:auto;
+    color:#4B5563;
+    line-height:1.8;
+
+}
+
+.technologies-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+
+}
+
+.technology-card{
+
+    background:#F8FAFC;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.technology-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.technology-icon{
+
+    font-size:3rem;
+    margin-bottom:20px;
+
+}
+
+.technology-card h3{
+
+    font-family:"Manrope",sans-serif;
+    color:#111827;
+    font-size:1.1rem;
+
+}
+/* ================= PROJECT OUTCOMES ================= */
+
+.outcomes{
+
+    padding:90px 8%;
+    background:#F8FAFC;
+
+}
+
+.outcomes-container{
+
+    max-width:1200px;
+    margin:auto;
+
+}
+
+.outcomes-heading{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.outcomes h2{
+
+    font-family:"Manrope",sans-serif;
+    font-size:2.5rem;
+    color:#111827;
+    margin-bottom:20px;
+
+}
+
+.outcomes-intro{
+
+    max-width:700px;
+    margin:auto;
+    color:#4B5563;
+    line-height:1.8;
+
+}
+
+.outcomes-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+}
+
+.outcome-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.outcome-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.outcome-icon{
+
+    font-size:3rem;
+    margin-bottom:20px;
+
+}
+
+.outcome-card h3{
+
+    font-family:"Manrope",sans-serif;
+    color:#111827;
+    margin-bottom:15px;
+
+}
+
+.outcome-card p{
+
+    color:#4B5563;
+    line-height:1.7;
+
+}
+/* ================= ABOUT ME SECTION ================= */
+
+.about-me{
+
+    padding:90px 8%;
+    background:#FFFFFF;
+
+}
+
+.about-me-container{
+
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+
+}
+
+.about-me-image{
+
+    flex:1;
+    text-align:center;
+    min-width:280px;
+
+}
+
+.about-me-image img{
+
+    width:100%;
+    max-width:320px;
+
+    border-radius:20px;
+
+    border:4px solid #2563EB;
+
+}
+
+.about-me-content{
+
+    flex:2;
+    min-width:320px;
+
+}
+
+.about-me h2{
+
+    font-family:"Manrope",sans-serif;
+    font-size:2.5rem;
+    color:#111827;
+    margin-bottom:20px;
+
+}
+
+.about-me p{
+
+    color:#4B5563;
+    line-height:1.9;
+    margin-bottom:20px;
+
+}
+
+@media(max-width:768px){
+
+    .about-me-container{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+}
+/* ================= CONTACT SECTION ================= */
+
+.contact{
+
+    padding:90px 8%;
+    background:#F8FAFC;
+
+}
+
+.contact-container{
+
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.contact h2{
+
+    font-family:"Manrope",sans-serif;
+    font-size:2.5rem;
+    color:#111827;
+    margin-bottom:20px;
+
+}
+
+.contact-intro{
+
+    max-width:650px;
+    margin:0 auto 60px;
+
+    color:#4B5563;
+    line-height:1.8;
+
+}
+
+.contact-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.contact-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.contact-icon{
+
+    font-size:2.8rem;
+    margin-bottom:20px;
+
+}
+
+.contact-card h3{
+
+    font-family:"Manrope",sans-serif;
+    color:#111827;
+    margin-bottom:10px;
+
+}
+
+.contact-card p{
+
+    color:#4B5563;
+    word-break:break-word;
+
+}
+/* ================= FOOTER ================= */
+
+.footer{
+
+    background:#111827;
+    color:#F8FAFC;
+
+    padding:50px 8%;
+
+}
+
+.footer-container{
+
+    max-width:1200px;
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.footer h3{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:1.8rem;
+
+    margin-bottom:15px;
+
+}
+
+.footer p{
+
+    color:#D1D5DB;
+
+    line-height:1.8;
+
+}
+
+.footer-copy{
+
+    margin-top:25px;
+
+    font-size:.95rem;
+
+    color:#9CA3AF;
+
+}
+/* ================= NAVIGATION ================= */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border-bottom:1px solid #E5E7EB;
+
+    z-index:1000;
+
+}
+
+.nav-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:18px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    text-decoration:none;
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:1.4rem;
+
+    color:#2563EB;
+
+    font-weight:bold;
+
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#111827;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#2563EB;
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+    .nav-container{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+}
+/* ================= SCROLL ANIMATIONS ================= */
+
+.fade-in{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:opacity .8s ease, transform .8s ease;
+
+}
+
+.fade-in.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+/* ================= BACK TO TOP ================= */
+
+#backToTop{
+
+    position:fixed;
+
+    bottom:30px;
+    right:30px;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:1.6rem;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#backToTop:hover{
+
+    background:#06B6D4;
+
+    transform:translateY(-4px);
+
+}
+    </style>
+
+</head>
+
+<body>
+<!-- ================= NAVIGATION ================= -->
+<header class="navbar">
+    <div class="nav-container">
+
+        <a href="#" class="logo">DentalVision AI</a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#workflow">Workflow</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#technologies">Technology</a></li>
+                <li><a href="#outcomes">Outcomes</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+<section class="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-text">
+
+            <div class="hero-tag">
+                AI-Powered Dental Imaging
+            </div>
+
+            <h1>DentalVision AI</h1>
+
+            <p>
+                DentalVision AI is an artificial intelligence system for panoramic
+                dental X-ray analysis that helps dentists review cases faster by
+                detecting and highlighting potential findings for clinical
+                evaluation.
+            </p>
+
+           <a href="#about" class="btn">View Project</a>        </div>
+
+        <div class="hero-image">
+
+            <img src="images/logo/dentalvision-logo.png"
+     alt="DentalVision AI Logo">      </div>
+
+    </div>
+
+</section>
+<section class="hero fade-in">
+    ...
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section id="about" class="about fade-in">
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <p class="section-label">About the Project</p>
+
+            <h2>Building AI to Support Panoramic Dental X-ray Analysis</h2>
+
+            <p>
+                DentalVision AI is an artificial intelligence project developed to
+                assist dentists in reviewing panoramic dental X-rays. The system
+                analyzes images and highlights potential findings to support faster
+                and more consistent clinical evaluation.
+            </p>
+
+            <p>
+                The project addresses the challenge of reviewing large numbers of
+                panoramic X-rays by providing AI-assisted analysis that supports
+                clinical decision-making while keeping the dentist responsible for
+                the final diagnosis.
+            </p>
+
+        </div>
+
+        <div class="workflow-card">
+
+            <h3>AI Workflow</h3>
+
+            <div class="workflow-step">
+                <span>1</span>
+                <p>Panoramic dental X-ray is uploaded.</p>
+            </div>
+
+            <div class="workflow-step">
+                <span>2</span>
+                <p>AI analyzes the image for potential findings.</p>
+            </div>
+
+            <div class="workflow-step">
+                <span>3</span>
+                <p>Detected findings are highlighted for clinical review.</p>
+            </div>
+
+            <div class="workflow-step">
+                <span>4</span>
+                <p>The dentist reviews the AI results before making the final clinical decision.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= KEY FEATURES SECTION ================= -->
+
+<section id="features" class="features fade-in">
+
+    <div class="features-container">
+
+        <div class="features-heading">
+
+            <p class="section-label">Key Features</p>
+
+            <h2>What DentalVision AI Provides</h2>
+
+            <p class="features-intro">
+                DentalVision AI supports panoramic dental X-ray analysis by assisting
+                dentists in reviewing images and highlighting potential findings for
+                clinical evaluation.
+            </p>
+
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">🦷</div>
+                <h3>Panoramic X-ray Analysis</h3>
+                <p>
+                    Analyzes panoramic dental X-rays to assist clinical image review.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI-Assisted Detection</h3>
+                <p>
+                    Highlights potential findings that may require clinical attention.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Clinical Support</h3>
+                <p>
+                    Provides additional information to support dentists during image interpretation.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Efficient Workflow</h3>
+                <p>
+                    Supports faster review of panoramic dental X-rays while keeping the dentist responsible for the final diagnosis.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= AI WORKFLOW SECTION ================= -->
+
+<section id="workflow" class="workflow fade-in">
+
+    <div class="workflow-container">
+
+        <div class="workflow-heading">
+
+            <p class="section-label">AI Workflow</p>
+
+            <h2>How DentalVision AI Works</h2>
+
+            <p class="workflow-intro">
+                DentalVision AI follows a structured workflow that supports dentists
+                during panoramic dental X-ray analysis while keeping clinical
+                decision-making in the hands of the clinician.
+            </p>
+
+        </div>
+
+        <div class="workflow-timeline">
+
+            <div class="workflow-box">
+
+                <div class="workflow-number">1</div>
+
+                <h3>Upload X-ray</h3>
+
+                <p>
+                    A panoramic dental X-ray is provided for AI analysis.
+                </p>
+
+            </div>
+
+            <div class="workflow-arrow">→</div>
+
+            <div class="workflow-box">
+
+                <div class="workflow-number">2</div>
+
+                <h3>AI Analysis</h3>
+
+                <p>
+                    The AI analyzes the image and identifies potential findings.
+                </p>
+
+            </div>
+
+            <div class="workflow-arrow">→</div>
+
+            <div class="workflow-box">
+
+                <div class="workflow-number">3</div>
+
+                <h3>Highlighted Findings</h3>
+
+                <p>
+                    Potential findings are highlighted to support image review.
+                </p>
+
+            </div>
+
+            <div class="workflow-arrow">→</div>
+
+            <div class="workflow-box">
+
+                <div class="workflow-number">4</div>
+
+                <h3>Clinical Review</h3>
+
+                <p>
+                    The dentist reviews the AI output before making the final diagnosis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= PROJECT GALLERY SECTION ================= -->
+
+<section id="gallery" class="gallery fade-in">
+
+    <div class="gallery-container">
+
+        <div class="gallery-heading">
+
+            <p class="section-label">Project Gallery</p>
+
+            <h2>DentalVision AI in Action</h2>
+
+            <p class="gallery-intro">
+                A selection of project visuals illustrating panoramic dental
+                X-ray analysis and AI-assisted image review.
+            </p>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-card">
+                <img src="images/gallery/panoramic-xray.jpg" alt="Panoramic Dental X-ray">
+                <h3>Panoramic X-ray</h3>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/gallery/annotation.png" alt="Annotated Dental X-ray">
+                <h3>Annotated Image</h3>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/gallery/ai-analysis.png" alt="AI Analysis">
+                <h3>AI Analysis</h3>
+            </div>
+
+            <div class="gallery-card">
+                <img src="images/gallery/results.png" alt="Project Results">
+                <h3>Project Results</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= TECHNOLOGIES SECTION ================= -->
+
+<section id="technologies" class="technologies fade-in">
+
+    <div class="technologies-container">
+
+        <div class="technologies-heading">
+
+            <p class="section-label">Technologies Used</p>
+
+            <h2>Tools Behind DentalVision AI</h2>
+
+            <p class="technologies-intro">
+                DentalVision AI combines artificial intelligence and panoramic
+                dental imaging technologies to support the review of dental
+                X-rays. This portfolio website is built using HTML, CSS, and
+                deployed with Netlify.
+            </p>
+
+        </div>
+
+        <div class="technologies-grid">
+
+            <div class="technology-card">
+                <div class="technology-icon">🤖</div>
+                <h3>Artificial Intelligence</h3>
+            </div>
+
+            <div class="technology-card">
+                <div class="technology-icon">🦷</div>
+                <h3>Panoramic Dental Imaging</h3>
+            </div>
+
+            <div class="technology-card">
+                <div class="technology-icon">🌐</div>
+                <h3>HTML</h3>
+            </div>
+
+            <div class="technology-card">
+                <div class="technology-icon">🎨</div>
+                <h3>CSS</h3>
+            </div>
+
+            <div class="technology-card">
+                <div class="technology-icon">🚀</div>
+                <h3>Netlify</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= PROJECT OUTCOMES SECTION ================= -->
+
+<section id="outcomes" class="outcomes fade-in">
+
+    <div class="outcomes-container">
+
+        <div class="outcomes-heading">
+
+            <p class="section-label">Project Outcomes</p>
+
+            <h2>Expected Benefits of DentalVision AI</h2>
+
+            <p class="outcomes-intro">
+                DentalVision AI is designed to support panoramic dental X-ray
+                analysis by assisting dentists during image review while
+                maintaining clinical decision-making by the clinician.
+            </p>
+
+        </div>
+
+        <div class="outcomes-grid">
+
+            <div class="outcome-card">
+                <div class="outcome-icon">🦷</div>
+                <h3>AI-Assisted Image Review</h3>
+                <p>
+                    Supports dentists by highlighting potential findings in panoramic dental X-rays.
+                </p>
+            </div>
+
+            <div class="outcome-card">
+                <div class="outcome-icon">⚡</div>
+                <h3>Improved Workflow</h3>
+                <p>
+                    Helps streamline the review process for panoramic dental images.
+                </p>
+            </div>
+
+            <div class="outcome-card">
+                <div class="outcome-icon">🔍</div>
+                <h3>Consistent Analysis</h3>
+                <p>
+                    Provides consistent AI-assisted image analysis to support clinical evaluation.
+                </p>
+            </div>
+
+            <div class="outcome-card">
+                <div class="outcome-icon">👨‍⚕️</div>
+                <h3>Clinical Decision Support</h3>
+                <p>
+                    Keeps the dentist responsible for interpreting the AI results and making the final diagnosis.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= ABOUT ME SECTION ================= -->
+
+<section id="about-me" class="about-me fade-in">
+
+    <div class="about-me-container">
+
+        <div class="about-me-image">
+
+            <img src="images/profile.jpg" alt="Engy Elgamal">
+
+        </div>
+
+        <div class="about-me-content">
+
+            <p class="section-label">About Me</p>
+
+            <h2>Engy Elgamal</h2>
+
+            <p>
+                I am the creator of DentalVision AI, a portfolio project focused on
+                applying artificial intelligence to panoramic dental X-ray analysis.
+                This project reflects my interest in combining healthcare and AI to
+                build practical solutions that support clinical workflows.
+            </p>
+
+            <p>
+                This website showcases the project's objectives, workflow,
+                technologies, and visual results while demonstrating my web
+                development skills using HTML, CSS, and Netlify.
+            </p>
+
+        </div>
+
+    </div>
+
+
+<section id="contact" class="contact">
+    <div class="contact-container">
+
+        <div class="contact-cards fade-in">
+
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:anoga2004@icloud.com">
+                        anoga2004@icloud.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">💼</div>
+                <h3>LinkedIn</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/engy-elgamal-1b8311ba/" target="_blank">
+                        linkedin.com/in/engy-elgamal-1b8311ba
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <h3>Engy Elgamal</h3>
+
+        <p>
+            DentalVision AI Portfolio
+        </p>
+
+        <p class="footer-copy">
+            © 2026 Engy Elgamal. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script>
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+});
+
+document.querySelectorAll(".fade-in").forEach(section=>{
+
+    observer.observe(section);
+
+});
+// Back to Top Button
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", function(){
+
+    if(window.scrollY > 400){
+
+        backToTop.style.display = "block";
+
+    }else{
+
+        backToTop.style.display = "none";
+
+    }
+
+});
+
+backToTop.addEventListener("click", function(){
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+});
+
+</script>
+<button id="backToTop" title="Back to Top">
+    ↑
+</button>
+<!-- ================= BACK TO TOP BUTTON ================= -->
+
+</body>
+</html>
