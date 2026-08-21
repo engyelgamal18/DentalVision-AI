@@ -29,11 +29,11 @@ html{
         }
 
         .hero{
-            min-height:100vh;
+            min-height:50vh;
             display:flex;
             align-items:center;
             justify-content:center;
-            padding:140px 8% 80px;
+            padding:140px 8% 40px;
             background:#F8FAFC;
         }
 
@@ -97,10 +97,48 @@ html{
         }
 
         .hero-image img{
-            width:100%;
-            max-width:430px;
-        }
+    width:100%;
+    max-width:430px;
+    max-height:300px;
+    object-fit:contain;
+}
+.project-summary{
+    max-width:1200px;
+    margin:0 auto 50px;
+    padding:0 8%;
 
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.summary-card{
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius:16px;
+    padding:22px;
+    text-align:center;
+}
+
+.summary-card strong{
+    display:block;
+    font-family:"Manrope",sans-serif;
+    color:#2563EB;
+    margin-bottom:8px;
+    font-size:1.15rem;
+}
+
+.summary-card span{
+    color:#4B5563;
+    line-height:1.5;
+    font-size:.95rem;
+}
+
+@media(max-width:768px){
+    .project-summary{
+        grid-template-columns:1fr 1fr;
+    }
+}
         @media(max-width:768px){
 
             .hero-container{
@@ -277,7 +315,7 @@ html{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(4,1fr);
 
     gap:30px;
 
@@ -336,7 +374,7 @@ html{
 
 .workflow{
 
-    padding:90px 8%;
+    padding:30px 8% 70px;
     background:#FFFFFF;
 
 }
@@ -379,7 +417,7 @@ html{
     justify-content:center;
     align-items:flex-start;
     gap:15px;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 
 }
 
@@ -473,10 +511,8 @@ html{
 /* ================= PROJECT GALLERY ================= */
 
 .gallery{
-
-    padding:90px 8%;
+    padding:45px 8% 60px;
     background:#F8FAFC;
-
 }
 
 .gallery-container{
@@ -560,11 +596,10 @@ html{
 /* ================= TECHNOLOGIES SECTION ================= */
 
 .technologies{
-
-    padding:90px 8%;
-    background:#FFFFFF;
-
+    padding: 50px 8% 35px;
+    background: #FFFFFF;
 }
+
 
 .technologies-container{
 
@@ -647,10 +682,8 @@ html{
 /* ================= PROJECT OUTCOMES ================= */
 
 .outcomes{
-
-    padding:90px 8%;
+    padding:55px 8% 90px;
     background:#F8FAFC;
-
 }
 
 .outcomes-container{
@@ -688,7 +721,7 @@ html{
 .outcomes-grid{
 
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap:30px;
 
 }
@@ -742,7 +775,7 @@ html{
 
 .about-me{
 
-    padding:90px 8%;
+    padding: 50px 8% 70px;
     background:#FFFFFF;
 
 }
@@ -815,11 +848,10 @@ html{
 }
 /* ================= CONTACT SECTION ================= */
 
-.contact{
 
-    padding:90px 8%;
+   .contact{
+    padding:25px 8% 60px;
     background:#F8FAFC;
-
 }
 
 .contact-container{
@@ -1109,6 +1141,777 @@ html{
     transform:translateY(-4px);
 
 }
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.gallery-card img {
+    cursor: pointer;
+}
+.medical-viewer {
+    max-width: 1050px;
+    margin: 60px auto 80px;
+    background: #111827;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.16);
+}
+
+.viewer-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 22px;
+    color: white;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.viewer-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #06B6D4;
+}
+
+.viewer-screen {
+    background: #05070b;
+    padding: 24px;
+    text-align: center;
+}
+
+.viewer-screen img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    display: block;
+}
+
+.viewer-info {
+    background: white;
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.viewer-info h3 {
+    margin-bottom: 10px;
+    color: #111827;
+    font-family: "Manrope", sans-serif;
+}
+
+.viewer-info p {
+    color: #4B5563;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.viewer-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background: #F8FAFC;
+}
+
+.viewer-controls button {
+    border: none;
+    background: #2563EB;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.viewer-controls button:hover {
+    background: #0E7490;
+    transform: translateY(-2px);
+}
+
+#case-counter {
+    font-weight: 600;
+    color: #111827;
+}
+.viewer-welcome {
+    min-height: 430px;
+    padding: 70px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #101827;
+    color: white;
+}
+
+.viewer-welcome .welcome-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(6, 182, 212, 0.12);
+    color: #06b6d4;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.viewer-welcome h2 {
+    color: white;
+    font-size: 38px;
+    margin: 0 0 15px;
+}
+
+.viewer-welcome p {
+    color: #aeb9c9;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 0 auto 30px;
+}
+
+.workflow-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.workflow-preview span {
+    color: #dbe5f1;
+    font-size: 15px;
+}
+
+.workflow-preview span:nth-child(odd) {
+    background: #182235;
+    border: 1px solid #29364b;
+    padding: 10px 16px;
+    border-radius: 30px;
+}
+
+#startViewer {
+    border: none;
+    background: #06b6d4;
+    color: #07111f;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+#startViewer:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+}
+.viewer-screen img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.viewer-screen img.switching {
+    opacity: 0;
+    transform: scale(0.98);
+}
+.viewer-progress {
+    width: 100%;
+    height: 6px;
+    background: #E5E7EB;
+    overflow: hidden;
+}
+
+#viewer-progress-bar {
+    height: 100%;
+    width: 0;
+    background: #06B6D4;
+    transition: width 0.35s ease;
+}
+.case-stage {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(6, 182, 212, 0.12);
+    border: 1px solid rgba(6, 182, 212, 0.35);
+    color: #67E8F9;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.restart-viewer {
+    display: block;
+    margin: 20px auto 25px;
+    padding: 10px 20px;
+
+    background: transparent;
+    color: #64748B;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.restart-viewer:hover {
+    color: #2563EB;
+    border-color: #2563EB;
+    background: #EFF6FF;
+}
+.menu-toggle{
+    display:none;
+}
+section{
+    scroll-margin-top:120px;
+}
+
+@media (max-width: 768px) {
+
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    *{
+        box-sizing:border-box;
+    }
+
+    /* NAVBAR */
+
+    .navbar{
+        width:100%;
+    }
+
+    .nav-container{
+        width:100%;
+        max-width:100%;
+        padding:15px 20px;
+    }
+
+    .logo{
+        display:block;
+        font-size:1.1rem;
+    }
+
+   .nav-container{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 20px;
+}
+
+.menu-toggle{
+    display:block;
+    border:none;
+    background:none;
+    font-size:1.7rem;
+    cursor:pointer;
+    color:#111827;
+}
+
+.nav-links{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    padding:15px 20px;
+    margin:0;
+    list-style:none;
+    z-index:1000;
+    border-top:1px solid #E5E7EB;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.nav-links.active{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+}
+
+.nav-links li{
+    width:100%;
+}
+
+.nav-links a{
+    display:block;
+    width:100%;
+    padding:12px 5px;
+    text-decoration:none;
+    color:#111827;
+}
+
+
+    /* HERO */
+
+    .hero{
+        width:100%;
+        max-width:100%;
+        padding:45px 20px;
+        text-align:center;
+        overflow:hidden;
+    }
+
+    .hero-container,
+    .hero-text{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+        padding:0;
+        margin:0 auto;
+    }
+
+    .hero-tag{
+        width:100%;
+        max-width:100%;
+        font-size:0.9rem;
+        line-height:1.4;
+        white-space:normal;
+    }
+
+    .hero h1{
+        width:100%;
+        max-width:100%;
+        font-size:2.35rem;
+        line-height:1.1;
+        overflow-wrap:break-word;
+        word-break:normal;
+    }
+
+    .hero p{
+        width:100%;
+        max-width:100%;
+        font-size:1rem;
+        line-height:1.6;
+        padding:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero a,
+    .hero button{
+        width:100%;
+        max-width:100%;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+}
+.navbar{
+    display:block;
+    width:100%;
+    background:#ffffff;
+}
+
+.nav-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    padding:16px 20px;
+}
+
+.logo{
+    display:block !important;
+    font-size:1.1rem;
+    color:#111827;
+    text-decoration:none;
+    white-space:nowrap;
+}
+.about,
+.about-container,
+.about-text{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    box-sizing:border-box;
+}
+
+.about{
+    padding:45px 20px;
+}
+
+.about-container{
+    padding:0;
+    margin:0 auto;
+}
+
+.about-text{
+    padding:0;
+}
+
+.about h2{
+    font-size:2rem;
+    line-height:1.25;
+    overflow-wrap:break-word;
+}
+
+.about p{
+    font-size:1rem;
+    line-height:1.7;
+    max-width:100%;
+    overflow-wrap:break-word;
+}
+.workflow-card{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    padding:25px 20px;
+}
+
+.workflow-step{
+    gap:15px;
+}
+
+.workflow-step span{
+    flex-shrink:0;
+}
+.features{
+    padding:45px 20px;
+}
+
+.features h2{
+    font-size:2.2rem;
+    line-height:1.15;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.features-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.feature-card{
+    width:100%;
+    max-width:100%;
+    padding:28px 22px;
+}
+#workflow{
+    padding:45px 20px;
+}
+
+.workflow-container{
+    width:100%;
+    max-width:100%;
+}
+
+.workflow-heading{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.workflow-heading h2{
+    font-size:2.2rem;
+    line-height:1.15;
+    max-width:100%;
+}
+
+.workflow-intro{
+    max-width:100%;
+    font-size:1rem;
+    line-height:1.6;
+}
+
+.workflow-timeline{
+    width:100%;
+    max-width:100%;
+}
+
+.workflow-box{
+    width:100%;
+    max-width:100%;
+    padding:28px 22px;
+}
+
+.workflow-arrow{
+    margin:18px 0;
+}
+.workflow-preview{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+.workflow-preview span{
+    width:auto;
+    text-align:center;
+}
+
+
+.workflow-preview{
+    gap:8px;
+}
+.preview-arrow{
+    font-size:0 !important;
+    line-height:1;
+}
+
+.preview-arrow::after{
+    content:"↓";
+    font-size:1.2rem;
+}
+#startViewer{
+    display:block;
+    margin:28px auto 0;
+    width:100%;
+    max-width:220px;
+}
+.viewer-screen{
+    min-height:auto;
+    padding:24px 14px;
+}
+
+.case-stage{
+    margin-bottom:18px;
+}
+
+#case-image{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    max-height:240px;
+    object-fit:contain;
+}
+
+.viewer-info{
+    padding:20px 16px;
+}
+
+.viewer-info h3{
+    font-size:1.25rem;
+    margin-bottom:8px;
+}
+
+.viewer-info p{
+    font-size:0.95rem;
+    line-height:1.5;
+}
+
+.viewer-controls{
+    padding:14px 12px;
+    gap:10px;
+}
+
+.viewer-controls button{
+    padding:11px 14px;
+    font-size:0.9rem;
+}
+
+#case-counter{
+    font-size:0.95rem;
+    min-width:40px;
+}
+
+.restart-viewer{
+    margin:14px auto 18px;
+    padding:10px 18px;
+}
+#case-image{
+    max-height:200px;
+    width:100%;
+    object-fit:contain;
+}
+
+.case-stage{
+    margin-bottom:12px;
+}
+
+.viewer-info{
+    padding:16px 14px;
+}
+.outcomes{
+    padding:45px 20px;
+}
+
+.outcomes h2{
+    font-size:2.2rem;
+    line-height:1.15;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.outcomes-intro{
+    max-width:100%;
+    font-size:1rem;
+    line-height:1.6;
+}
+.outcomes-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.outcome-card{
+    width:100%;
+    max-width:100%;
+    padding:28px 22px;
+}
+.about-me{
+    padding:45px 20px;
+}
+
+.about-me-container{
+    width:100%;
+    max-width:100%;
+    flex-direction:column;
+    gap:30px;
+}
+
+.about-me-image{
+    width:100%;
+    max-width:380px;
+    margin:0 auto;
+}
+
+.about-me-image img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.about-me-content{
+    width:100%;
+    max-width:100%;
+    text-align:center;
+}
+
+.about-me-content h2{
+    font-size:2.2rem;
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.about-me-content p{
+    font-size:0.98rem;
+    line-height:1.65;
+}
+.about-me{
+    padding:40px 20px 55px;
+}
+
+.about-me-container{
+    flex-direction:column;
+    gap:28px;
+    width:100%;
+    max-width:100%;
+}
+
+.about-me-image{
+    min-width:0;
+    width:100%;
+}
+
+.about-me-image img{
+    width:100%;
+    max-width:280px;
+    height:auto;
+    margin:0 auto;
+}
+
+.about-me-content{
+    min-width:0;
+    width:100%;
+    text-align:center;
+}
+
+.about-me h2{
+    font-size:2.15rem;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.about-me p{
+    font-size:0.96rem;
+    line-height:1.65;
+    margin-bottom:18px;
+}
+.contact-cards{
+    grid-template-columns:1fr;
+    gap:18px;
+}
+
+.contact-card{
+    width:100%;
+    max-width:100%;
+    padding:24px 18px;
+}
+
+.contact-icon{
+    font-size:2.4rem;
+    margin-bottom:14px;
+}
+
+.contact-card h3{
+    margin-bottom:8px;
+}
+
+.contact-card p{
+    line-height:1.5;
+}
+.contact{
+    padding-bottom:35px;
+}
+section{
+    scroll-margin-top:140px;
+}
+#viewer-content{
+    scroll-margin-top:120px;
+}
+.fade-in{
+    opacity:1 !important;
+    transform:none !important;
+}
+.contact{
+    padding-bottom:30px;
+}
+.contact-card a{
+    overflow-wrap:anywhere;
+    word-break:break-word;
+}
     </style>
 
 </head>
@@ -1120,8 +1923,10 @@ html{
 
         <a href="#" class="logo">DentalVision AI</a>
 
+ <button class="menu-toggle" id="menuToggle">☰</button>
+
         <nav>
-            <ul class="nav-links">
+          <ul class="nav-links" id="navLinks">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
@@ -1140,23 +1945,23 @@ html{
 
     <div class="hero-container">
 
-        <div class="hero-text">
+       <div class="hero-text">
 
-            <div class="hero-tag">
-                AI-Powered Dental Imaging
-            </div>
+    <div class="hero-tag">
+        Panoramic Dental X-ray AI Project
+    </div>
 
-            <h1>DentalVision AI</h1>
+    <h1>DentalVision AI</h1>
 
-            <p>
-                DentalVision AI is an artificial intelligence system for panoramic
-                dental X-ray analysis that helps dentists review cases faster by
-                detecting and highlighting potential findings for clinical
-                evaluation.
-            </p>
+    <p>
+        A hands on project exploring how AI can be used with panoramic dental X-rays.
+        I worked with dental image data, annotations, model training, predictions,
+        and evaluation to understand how AI can support dental image review.
+    </p>
 
-           <a href="#about" class="btn">View Project</a>        </div>
+    <a href="#about" class="btn">Explore the Project</a>
 
+</div>
         <div class="hero-image">
 
             <img src="images/logo/dentalvision-logo.png"
@@ -1165,8 +1970,29 @@ html{
     </div>
 
 </section>
-<section class="hero fade-in">
- 
+
+<section class="project-summary">
+
+    <div class="summary-card">
+        <strong>1,300+</strong>
+        <span>Panoramic X-rays</span>
+    </div>
+
+    <div class="summary-card">
+        <strong>Annotations</strong>
+        <span>Dental findings labeled and reviewed</span>
+    </div>
+
+    <div class="summary-card">
+        <strong>Model Training</strong>
+        <span>Object detection model tested on dental images</span>
+    </div>
+
+    <div class="summary-card">
+        <strong>Evaluation</strong>
+        <span>Predictions and model results reviewed</span>
+    </div>
+
 </section>
 
 <!-- ================= ABOUT SECTION ================= -->
@@ -1179,20 +2005,17 @@ html{
 
             <p class="section-label">About the Project</p>
 
-            <h2>Building AI to Support Panoramic Dental X-ray Analysis</h2>
+            <h2>Exploring AI for Panoramic Dental X-rays</h2>
 
             <p>
-                DentalVision AI is an artificial intelligence project developed to
-                assist dentists in reviewing panoramic dental X-rays. The system
-                analyzes images and highlights potential findings to support faster
-                and more consistent clinical evaluation.
+                DentalVision AI is a hands-on project where I explored how artificial
+    intelligence can be used with panoramic dental X-rays.
             </p>
 
             <p>
-                The project addresses the challenge of reviewing large numbers of
-                panoramic X-rays by providing AI-assisted analysis that supports
-                clinical decision-making while keeping the dentist responsible for
-                the final diagnosis.
+               I worked with dental image data, annotations, model training, predictions,
+    and evaluation. My goal was to understand how AI can support dental image
+    review while keeping the dentist responsible for the final clinical decision.
             </p>
 
         </div>
@@ -1201,27 +2024,31 @@ html{
 
             <h3>AI Workflow</h3>
 
-            <div class="workflow-step">
-                <span>1</span>
-                <p>Panoramic dental X-ray is uploaded.</p>
-            </div>
+           <div class="workflow-card">
 
-            <div class="workflow-step">
-                <span>2</span>
-                <p>AI analyzes the image for potential findings.</p>
-            </div>
+    <h3>What I Worked On</h3>
 
-            <div class="workflow-step">
-                <span>3</span>
-                <p>Detected findings are highlighted for clinical review.</p>
-            </div>
+    <div class="workflow-step">
+        <span>1</span>
+        <p>Prepared and reviewed panoramic dental X-ray data.</p>
+    </div>
 
-            <div class="workflow-step">
-                <span>4</span>
-                <p>The dentist reviews the AI results before making the final clinical decision.</p>
-            </div>
+    <div class="workflow-step">
+        <span>2</span>
+        <p>Created and reviewed annotations for different dental classes.</p>
+    </div>
 
-        </div>
+    <div class="workflow-step">
+        <span>3</span>
+        <p>Trained and tested an object detection model.</p>
+    </div>
+
+    <div class="workflow-step">
+        <span>4</span>
+        <p>Reviewed predictions and model evaluation results.</p>
+    </div>
+
+</div>
 
     </div>
 
@@ -1236,12 +2063,10 @@ html{
 
             <p class="section-label">Key Features</p>
 
-            <h2>What DentalVision AI Provides</h2>
+            <h2>What I Explored in DentalVision AI</h2>
 
             <p class="features-intro">
-                DentalVision AI supports panoramic dental X-ray analysis by assisting
-                dentists in reviewing images and highlighting potential findings for
-                clinical evaluation.
+               This project explores how AI can be used with panoramic dental X-rays, from image annotation and model training to reviewing predictions and results.
             </p>
 
         </div>
@@ -1295,72 +2120,71 @@ html{
 
             <p class="section-label">AI Workflow</p>
 
-            <h2>How DentalVision AI Works</h2>
+            <h2>My AI Project Workflow</h2>
 
             <p class="workflow-intro">
-                DentalVision AI follows a structured workflow that supports dentists
-                during panoramic dental X-ray analysis while keeping clinical
-                decision-making in the hands of the clinician.
+               <p>
+I followed a simple workflow to prepare the dental X-ray data, train the model, and review its predictions.
+</p>
             </p>
 
         </div>
 
         <div class="workflow-timeline">
 
-            <div class="workflow-box">
+      <div class="workflow-box">
 
-                <div class="workflow-number">1</div>
+    <div class="workflow-number">1</div>
 
-                <h3>Upload X-ray</h3>
+    <h3>Prepare Data</h3>
 
-                <p>
-                    A panoramic dental X-ray is provided for AI analysis.
-                </p>
+    <p>
+        I worked with panoramic dental X-ray images and prepared the data for the project.
+    </p>
 
-            </div>
+</div>
 
-            <div class="workflow-arrow">→</div>
+<div class="workflow-arrow">→</div>
 
-            <div class="workflow-box">
+<div class="workflow-box">
 
-                <div class="workflow-number">2</div>
+    <div class="workflow-number">2</div>
 
-                <h3>AI Analysis</h3>
+    <h3>Annotation</h3>
 
-                <p>
-                    The AI analyzes the image and identifies potential findings.
-                </p>
+    <p>
+        I added and reviewed annotations for different dental classes.
+    </p>
 
-            </div>
+</div>
 
-            <div class="workflow-arrow">→</div>
+<div class="workflow-arrow">→</div>
 
-            <div class="workflow-box">
+<div class="workflow-box">
 
-                <div class="workflow-number">3</div>
+    <div class="workflow-number">3</div>
 
-                <h3>Highlighted Findings</h3>
+    <h3>Model Training</h3>
 
-                <p>
-                    Potential findings are highlighted to support image review.
-                </p>
+    <p>
+        I trained and tested an object detection model using the prepared dental images.
+    </p>
 
-            </div>
+</div>
 
-            <div class="workflow-arrow">→</div>
+<div class="workflow-arrow">→</div>
 
-            <div class="workflow-box">
+<div class="workflow-box">
 
-                <div class="workflow-number">4</div>
+    <div class="workflow-number">4</div>
 
-                <h3>Clinical Review</h3>
+    <h3>Prediction & Evaluation</h3>
 
-                <p>
-                    The dentist reviews the AI output before making the final diagnosis.
-                </p>
+    <p>
+        I reviewed the model predictions and evaluation results to understand its performance.
+    </p>
 
-            </div>
-
+</div>     
         </div>
 
     </div>
@@ -1384,33 +2208,73 @@ html{
             </p>
 
         </div>
+<div class="medical-viewer">
 
-        <div class="gallery-grid">
-
-            <div class="gallery-card">
-                <img src="images/gallery/panoramic-xray.jpg" alt="Panoramic Dental X-ray">
-                <h3>Panoramic X-ray</h3>
-            </div>
-
-            <div class="gallery-card">
-                <img src="images/gallery/annotation.png" alt="Annotated Dental X-ray">
-                <h3>Annotated Image</h3>
-            </div>
-
-            <div class="gallery-card">
-                <img src="images/gallery/ai-analysis.png" alt="AI Analysis">
-                <h3>AI Analysis</h3>
-            </div>
-
-            <div class="gallery-card">
-                <img src="images/gallery/results.png" alt="Project Results">
-                <h3>Project Results</h3>
-            </div>
-
-        </div>
-
+    <div class="viewer-header">
+        <span class="viewer-dot"></span>
+        <span>DentalVision AI — Imaging Console</span>
     </div>
 
+
+    <div id="viewer-welcome" class="viewer-welcome">
+
+    <div class="welcome-icon">✦</div>
+
+    <h2>Explore the AI Imaging Workflow</h2>
+
+    <p>
+        Follow the complete journey from the original panoramic X-ray
+        to manual annotation, AI prediction, and final model evaluation.
+    </p>
+
+    <div class="workflow-preview">
+        <span>Original X-ray</span>
+       <span class="preview-arrow"></span>
+        <span>Annotation</span>
+        <span class="preview-arrow"></span>
+        <span>AI Prediction</span>
+       <span class="preview-arrow"></span>
+        <span>Results</span>
+    </div>
+
+    <button id="startViewer">
+        Start Analysis →
+    </button>
+
+</div>
+
+<div id="viewer-content" style="display: none;">
+
+    <div class="viewer-screen">
+        <div id="case-stage" class="case-stage">
+    STEP 1 — ORIGINAL X-RAY
+</div>
+        <img id="case-image"
+             src="images/gallery/panoramic-xray.jpg"
+             alt="Dental X-ray case">
+    </div>
+
+    <div class="viewer-info">
+        <h3 id="case-title">Original Panoramic X-ray</h3>
+        <p id="case-description">
+            Raw panoramic dental X-ray before annotation or AI analysis.
+        </p>
+    </div>
+
+    <div class="viewer-controls">
+        <button id="prevCase">← Previous</button>
+        <span id="case-counter">1 / 9</span>
+        <button id="nextCase">Next →</button>
+    </div>
+    <div class="viewer-progress">
+    <div id="viewer-progress-bar"></div>
+</div>
+<button id="restartViewer" class="restart-viewer">
+    ↻ Restart Analysis
+</button>
+</div>
+</div>
+        
 </section>
 <!-- ================= TECHNOLOGIES SECTION ================= -->
 
@@ -1425,41 +2289,39 @@ html{
             <h2>Tools Behind DentalVision AI</h2>
 
             <p class="technologies-intro">
-                DentalVision AI combines artificial intelligence and panoramic
-                dental imaging technologies to support the review of dental
-                X-rays. This portfolio website is built using HTML, CSS, and
-                deployed with Netlify.
+                 DentalVision AI was developed using an object detection workflow
+    for panoramic dental X-rays, including image annotation, YOLOv11
+    model training, prediction testing, and performance evaluation.
             </p>
 
         </div>
 
         <div class="technologies-grid">
 
-            <div class="technology-card">
-                <div class="technology-icon">🤖</div>
-                <h3>Artificial Intelligence</h3>
-            </div>
+     <div class="technology-card">
+    <div class="technology-icon">🤖</div>
+    <h3>YOLOv11</h3>
+</div>
 
-            <div class="technology-card">
-                <div class="technology-icon">🦷</div>
-                <h3>Panoramic Dental Imaging</h3>
-            </div>
+<div class="technology-card">
+    <div class="technology-icon">🦷</div>
+    <h3>Panoramic Dental X-rays</h3>
+</div>
 
-            <div class="technology-card">
-                <div class="technology-icon">🌐</div>
-                <h3>HTML</h3>
-            </div>
+<div class="technology-card">
+    <div class="technology-icon">🏷️</div>
+    <h3>Image Annotation</h3>
+</div>
 
-            <div class="technology-card">
-                <div class="technology-icon">🎨</div>
-                <h3>CSS</h3>
-            </div>
+<div class="technology-card">
+    <div class="technology-icon">🎯</div>
+    <h3>Object Detection</h3>
+</div>
 
-            <div class="technology-card">
-                <div class="technology-icon">🚀</div>
-                <h3>Netlify</h3>
-            </div>
-
+<div class="technology-card">
+    <div class="technology-icon">📊</div>
+    <h3>Model Evaluation</h3>
+</div>      
         </div>
 
     </div>
@@ -1487,37 +2349,36 @@ html{
 
         <div class="outcomes-grid">
 
-            <div class="outcome-card">
-                <div class="outcome-icon">🦷</div>
-                <h3>AI-Assisted Image Review</h3>
-                <p>
-                    Supports dentists by highlighting potential findings in panoramic dental X-rays.
-                </p>
-            </div>
+          <div class="outcome-card">
+    <div class="outcome-icon">🔍</div>
+    <h3>AI-Assisted Detection</h3>
+    <p>
+        Highlights potential findings in panoramic dental X-rays for clinical review.
+    </p>
+</div>
 
-            <div class="outcome-card">
-                <div class="outcome-icon">⚡</div>
-                <h3>Improved Workflow</h3>
-                <p>
-                    Helps streamline the review process for panoramic dental images.
-                </p>
-            </div>
+<div class="outcome-card">
+    <div class="outcome-icon">⚡</div>
+    <h3>More Efficient Review</h3>
+    <p>
+        May help dentists review panoramic dental images more efficiently by drawing attention to detected findings.
+    </p>
+</div>
 
-            <div class="outcome-card">
-                <div class="outcome-icon">🔍</div>
-                <h3>Consistent Analysis</h3>
-                <p>
-                    Provides consistent AI-assisted image analysis to support clinical evaluation.
-                </p>
-            </div>
-
-            <div class="outcome-card">
-                <div class="outcome-icon">👨‍⚕️</div>
-                <h3>Clinical Decision Support</h3>
-                <p>
-                    Keeps the dentist responsible for interpreting the AI results and making the final diagnosis.
-                </p>
-            </div>
+<div class="outcome-card">
+    <div class="outcome-icon">📊</div>
+    <h3>Consistent Analysis</h3>
+    <p>
+        Applies the same trained detection approach across images to support a more standardized review process.
+    </p>
+</div>
+<div class="outcome-card">
+<div  class="outcome-icon">🦷</div>
+    <h3>Dentist-Led Decisions</h3>
+    <p>
+        Keeps interpretation and final clinical decisions in the hands of the dentist.
+    </p>
+</div>  
 
         </div>
 
@@ -1543,16 +2404,11 @@ html{
             <h2>Engy Elgamal</h2>
 
             <p>
-                I am the creator of DentalVision AI, a portfolio project focused on
-                applying artificial intelligence to panoramic dental X-ray analysis.
-                This project reflects my interest in combining healthcare and AI to
-                build practical solutions that support clinical workflows.
+                I am a dentist with over 25 years of clinical experience and a growing focus on artificial intelligence in healthcare. DentalVision AI brings these two areas together through an object detection project designed to explore AI-assisted analysis of panoramic dental X-rays. 
             </p>
 
             <p>
-                This website showcases the project's objectives, workflow,
-                technologies, and visual results while demonstrating my web
-                development skills using HTML, CSS, and Netlify.
+               Through this project, I worked on dental image preparation, annotation, modeltraining, prediction review, and performance evaluation. My goal is to continue developing practical AI skills and explore how technology can support dentists while keeping clinical interpretation and decision making in the hands of the clinician.
             </p>
 
         </div>
@@ -1598,7 +2454,7 @@ html{
         <h3>Engy Elgamal</h3>
 
         <p>
-            DentalVision AI Portfolio
+            Dentist | Dental AI & Healthcare Technology
         </p>
 
         <p class="footer-copy">
@@ -1608,6 +2464,7 @@ html{
     </div>
 
 </footer>
+
 
 <script>
 
@@ -1630,41 +2487,216 @@ document.querySelectorAll(".fade-in").forEach(section=>{
     observer.observe(section);
 
 });
-// Back to Top Button
 
-const backToTop = document.getElementById("backToTop");
 
-window.addEventListener("scroll", function(){
+</script>
 
-    if(window.scrollY > 400){
+<script>
+const startViewer = document.getElementById("startViewer");
+const viewerWelcome = document.getElementById("viewer-welcome");
+const viewerContent = document.getElementById("viewer-content");
 
-        backToTop.style.display = "block";
+startViewer.addEventListener("click", function () {
+    viewerWelcome.style.display = "none";
+    viewerContent.style.display = "block";
+    setTimeout(function () {
+        viewerContent.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }, 50);
 
-    }else{
+});
 
-        backToTop.style.display = "none";
+const cases = [
+    {
+        image: "images/gallery/panoramic-xray.jpg",
+        title: "Original Panoramic X-ray",
+        description: "Raw panoramic dental X-ray before annotation or AI analysis."
+    },
+    {
+        image: "images/gallery/annotation.png",
+        title: "Dental Image Annotation",
+        description: "Dental structures and findings are labeled to prepare the image data for AI model training."
+    },
+    {
+        image: "images/gallery/manual-annotation-1.png",
+        title: "Manual Annotation — Example 1",
+        description: "Manual bounding-box annotation identifies relevant dental structures and findings in the panoramic X-ray."
+    },
+    {
+        image: "images/gallery/manual-annotation-2.png",
+        title: "Manual Annotation — Example 2",
+        description: "A second annotated case demonstrates the labeling process across a different panoramic X-ray."
+    },
+    {
+        image: "images/gallery/ai-analysis.png",
+        title: "AI Model Analysis",
+        description: "Training performance and loss metrics are monitored to evaluate how the AI model learns from the annotated dataset."
+    },
+    {
+        image: "images/gallery/ai-prediction-1.png",
+        title: "AI Prediction — Example 1",
+        description: "The trained model analyzes a panoramic X-ray and automatically generates dental object detections."
+    },
+    {
+        image: "images/gallery/ai-prediction-2.png",
+        title: "AI Prediction — Example 2",
+        description: "The AI model performs detection on another panoramic X-ray to demonstrate prediction across different cases."
+    },
+    {
+        image: "images/gallery/results.png",
+        title: "Project Results",
+        description: "The trained object detection model and its evaluation metrics are reviewed after training."
+    },
+    {
+        image: "images/gallery/final-model-performance.png",
+        title: "Final Model Performance",
+        description: "Final performance metrics summarize the model's detection accuracy, precision, recall, and overall results."
+    }
+];
 
+let currentCase = 0;
+
+const caseImage = document.getElementById("case-image");
+const caseTitle = document.getElementById("case-title");
+const caseDescription = document.getElementById("case-description");
+const caseCounter = document.getElementById("case-counter");
+const restartViewer = document.getElementById("restartViewer");
+const caseStage = document.getElementById("case-stage");
+
+function updateCase() {
+    caseImage.classList.add("switching");
+
+    setTimeout(function () {
+        caseImage.src = cases[currentCase].image;
+        caseTitle.textContent = cases[currentCase].title;
+        caseStage.textContent =
+    "STEP " + (currentCase + 1) + " — " + cases[currentCase].title.toUpperCase();
+        caseDescription.textContent = cases[currentCase].description;
+        caseCounter.textContent = (currentCase + 1) + " / " + cases.length;
+
+        caseImage.classList.remove("switching");
+    }, 250);
+}
+
+nextCase.addEventListener("click", function () {
+    currentCase++;
+
+    if (currentCase >= cases.length) {
+        currentCase = 0;
+    }
+
+    updateCase();
+});
+
+prevCase.addEventListener("click", function () {
+    currentCase--;
+
+    if (currentCase < 0) {
+        currentCase = cases.length - 1;
+    }
+
+    updateCase();
+});
+prevCase.addEventListener("click", function () {
+    currentCase--;
+
+    if (currentCase < 0) {
+        currentCase = cases.length - 1;
+    }
+
+    updateCase();
+});
+
+
+// ADD THE NEW CODE HERE ↓
+
+document.addEventListener("keydown", function (event) {
+
+    if (viewerContent.style.display !== "none") {
+
+        if (event.key === "ArrowRight") {
+            currentCase++;
+
+            if (currentCase >= cases.length) {
+                currentCase = 0;
+            }
+
+            updateCase();
+        }
+
+        if (event.key === "ArrowLeft") {
+            currentCase--;
+
+            if (currentCase < 0) {
+                currentCase = cases.length - 1;
+            }
+
+            updateCase();
+        }
     }
 
 });
+restartViewer.addEventListener("click", function () {
+    currentCase = 0;
+    updateCase();
 
-backToTop.addEventListener("click", function(){
+    viewerContent.style.display = "none";
+    viewerWelcome.style.display = "flex";
 
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
+    document.querySelector(".medical-viewer").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
     });
-
 });
 
 </script>
-<button id="backToTop" title="Back to Top">
-    ↑
-</button>
-<!-- ================= BACK TO TOP BUTTON ================= -->
 
+<!-- ================= IMAGE LIGHTBOX ================= -->
+
+<!-- ================= BACK TO TOP BUTTON ================= -->
+ <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="Expanded project image">
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const galleryImages = document.querySelectorAll(".gallery-card img");
+
+    galleryImages.forEach(function (image) {
+        image.addEventListener("click", function () {
+            lightboxImg.src = image.src;
+            lightbox.style.display = "flex";
+        });
+    });
+
+    lightbox.addEventListener("click", function () {
+        lightbox.style.display = "none";
+    });
+
+    lightboxImg.addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
+
+});
+</script>
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
+</script>
 </body>
 </html>
