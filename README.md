@@ -154,5 +154,5 @@ It is not a medical device and should not be used for diagnosis or treatment dec
 - - Live Website: [DentalVision AI](http://127.0.0.1:5500/index.html)
   - - Demo Video: To be added
 - Retrospective: [DentalVision AI Retrospective](RETROSPECTIVE.md)
-        - Build-in-Public Post: To be added
+  - Build-in-Public Post: [Building DentalVision AI](https://github.com/engyelgamal18/DentalVision-AI/blob/main/BUILD-IN-PUBLIC.md)
 
