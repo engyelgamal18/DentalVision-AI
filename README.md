@@ -153,6 +153,6 @@ It is not a medical device and should not be used for diagnosis or treatment dec
 - GitHub Repository: [DentalVision-AI](https://github.com/engyelgamal18/DentalVision-AI)
 - - Live Website: [DentalVision AI](http://127.0.0.1:5500/index.html)
   - - Demo Video: To be added
-- Retrospective: [DentalVision AI Retrospective](RETROSPECTIVE.md)
+- Retrospective: [DentalVision AI Retrospective]](https://github.com/engyelgamal18/DentalVision-AI/blob/main/RETROSPECTIVE.md)
   - Build-in-Public Post: [Building DentalVision AI](https://github.com/engyelgamal18/DentalVision-AI/blob/main/BUILD-IN-PUBLIC.md)
 
