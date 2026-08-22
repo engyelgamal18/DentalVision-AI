@@ -150,9 +150,9 @@ DentalVision AI is an educational and experimental project.
 It is not a medical device and should not be used for diagnosis or treatment decisions. Clinical interpretation should always be performed by a qualified dental professional.
 
 ## Project Deliverables
-- GitHub Repository: [DentalVision-AI](https://github.com/engyelgamal18/DentalVision-AI)
-- - Live Website: [DentalVision AI](http://127.0.0.1:5500/index.html)
-  - - Demo Video: To be added
-- Retrospective: [DentalVision AI Retrospective]](https://github.com/engyelgamal18/DentalVision-AI/blob/main/RETROSPECTIVE.md)
-  - Build-in-Public Post: [Building DentalVision AI](https://github.com/engyelgamal18/DentalVision-AI/blob/main/BUILD-IN-PUBLIC.md)
 
+- GitHub Repository: [DentalVision-AI](https://github.com/engyelgamal18/DentalVision-AI)
+- Live Website: [DentalVision AI](https://monumental-phoenix-b42bc8.netlify.app)
+- Demo Video: To be added
+- Retrospective: [DentalVision AI Retrospective](https://github.com/engyelgamal18/DentalVision-AI/blob/main/RETROSPECTIVE.md)
+- Build-in-Public Post: [Building DentalVision AI](https://github.com/engyelgamal18/DentalVision-AI/blob/main/BUILD-IN-PUBLIC.md)
