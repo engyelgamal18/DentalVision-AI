@@ -27,6 +27,22 @@ The second thing I learned is how to test and review AI results instead of only 
 
 The third thing I learned is how to use AI as a helper while still checking the work myself. AI helped me with coding, troubleshooting, and understanding some parts of the project, but I learned that I still need to review and test everything.
 
+## How My Way of Working Changed
+
+Before this project, I usually focused on getting the final result. During this project, I learned to work more step by step.
+
+I started checking the data, annotations, model predictions, and evaluation results separately instead of only looking at the final output.
+
+I also learned that when something did not work, I should test the problem and try to understand the reason instead of immediately starting again.
+
+This made me more patient and helped me understand the project better.
+
+## What Was Most Difficult
+
+One of the most difficult parts was understanding how all the steps connected together. At first, I saw the data, annotations, training, and evaluation as separate tasks.
+
+By the end of the project, I understood how each step affects the next one. This helped me see the project as one complete workflow instead of separate pieces.
+
 ## Final Reflection
 
 When I started this project, I was still learning how AI projects are built from start to finish.
@@ -37,12 +53,5 @@ I also learned that building the model is only one part of the project. Testing,
 
 This project made me more confident about continuing to learn AI and exploring how it can be used in dentistry and healthcare.
 
-## How My Way of Working Changed
 
-Before this project, I usually focused on getting the final result. During this project, I learned to work more step by step.
 
-I started checking the data, annotations, model predictions, and evaluation results separately instead of only looking at the final output.
-
-I also learned that when something did not work, I should test the problem and try to understand the reason instead of immediately starting again.
-
-This made me more patient and helped me understand the project better.
