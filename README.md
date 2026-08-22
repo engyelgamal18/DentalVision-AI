@@ -148,3 +148,12 @@ AI helped me during the development process, but I reviewed the final work mysel
 DentalVision AI is an educational and experimental project.
 
 It is not a medical device and should not be used for diagnosis or treatment decisions. Clinical interpretation should always be performed by a qualified dental professional.
+
+## Project Deliverables
+- GitHub Repository: [DentalVision-AI](https://github.com/engyelgamal18/DentalVision-AI)
+- - Live Website: [DentalVision AI](http://127.0.0.1:5500/index.html)
+  - - Demo Video: To be added
+
+      - Retrospective: To be added
+        - Build-in-Public Post: To be added
+
