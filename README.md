@@ -137,11 +137,11 @@ If I continue developing DentalVision AI, I would like to:
 
 ## AI Transparency
 
-I used AI tools during this project to help with coding, troubleshooting, documentation, and understanding parts of the workflow.
+I used AI tools, including Claude, to help me with parts of the website code, troubleshooting, documentation, and understanding the project workflow.
 
-I reviewed and tested the outputs myself, including the website, model results, project content, and final presentation.
+I checked and tested the website myself, reviewed the model results, corrected the content, and made the final decisions about the project structure and presentation.
 
-AI was used as a learning and development assistant, not as a replacement for clinical judgment.
+AI helped me during the development process, but I reviewed the final work myself.
 
 ## Disclaimer
 
