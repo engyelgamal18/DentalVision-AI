@@ -14,20 +14,20 @@ This page includes the main work I completed during the General AI Fluency track
 
  ## Week 2
 
-- [Frame It as Cases: Work That Speaks for Itself](https://docs.google.com/document/d/1r0TcF9kRGQABt2rUx26IsRa-oIQO4t05LczPeXrlhH0/edit?tab=t.0)
+- [Frame It as Cases: Work That Speaks for Itself](https://docs.google.com/document/d/1xbzWq19NZwxnFESh2CqwycVi2bSSCNCid3Y52J8Vdog/edit?tab=t.0)
 - [The Prompt Ladder](https://docs.google.com/document/d/1ljEmXMvObkMRjdRxRcgS5SB1dU_iq9eisxmaxPF8Z2k/edit?tab=t.0)
 - [Prompting Fundamentals on Real Tasks v2](https://docs.google.com/document/d/16QWjA_bR6K2MCgFXngKWyIokkqbk65qomBXXsltqwo4/edit?tab=t.0)
 
  ## Week 3
 
 - [Consistency, Not Talent (and Frame, Not Upstage)](https://docs.google.com/document/d/1xbzWg19NZwxnFESh2CqwycVi2bSSCNCid3Y52J8Vdog/edit?usp=sharing)
-- [Decide Once: Build Your Identity Kit](https://docs.google.com/document/d/1prZ6RsKwjMdjV5Hhrh5ymQdi_e6Tq8N37ROfBfx5Z-8/edit?usp=sharing)
-- [Kill your darlings: Curate Your Images](https://docs.google.com/document/d/1uBIrOu4LesrnxFQFm8B-UVN3rB6Zg9MQJUWUhwq-Qso/edit?usp=sharing)
-- [The Through-Line: Map Content & CTAs](https://docs.google.com/document/d/1k6rL6DQuZUzoIBiZqREoGZCGpJGmTZxpjKXymsGD9lY/edit?usp=sharing)
+- [Decide Once: Build Your Identity Kit](https://docs.google.com/document/d/1prZ6RsKwjMdjV5Hhrh5ymQdi_e6Tq8N37R0fBfx5Z-8/edit?tab=t.0)
+- [Kill your darlings: Curate Your Images](https://docs.google.com/document/d/1uBIrOu4LesrnxFQFm8B-UVN3rB6Zg9MQJUWUhwq-Qso/edit?tab=t.0)
+- [The Through-Line: Map Content & CTAs](https://docs.google.com/document/d/1k6rL6DQuZUz0IBiZqREoGZCGpJGmTZxpjKXynsGD9lY/edit?tab=t.0#heading=h.uzrz8q3h5iip)
 
  ## Week 4
 
-- [Empty but Live: Ship a Blank Page - Document](https://docs.google.com/document/d/1cRYA_RKit1sSxvZyoH290aU-EH32BQFEOP_E1PuNU1c/edit?usp=sharing)
+- [Empty but Live: Ship a Blank Page - Document](https://docs.google.com/document/d/1cRYA_RKit1sSxvZyoH290aU-EH32BQFEOP_E1PuNU1c/edit?tab=t.0)
 - [Empty but Live: Live Website](https://tangerine-platypus-0f6c5a.netlify.app/)
 - [Three Roads: Choose Your Stack with AI](https://docs.google.com/document/d/1QFvenh8Dod988wArOo6KRiCdS2ZmGz8hMbP06zz2LLDw/edit?usp=sharing)
 - [Ship an Automation Workflow v2](https://docs.google.com/document/d/1zFRaSAtCAdGPbYSA_AE63Wf0pmR3L8orqEen75H34mw/edit?usp=sharing)
