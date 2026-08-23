@@ -9,8 +9,10 @@ This page includes the main work I completed during the General AI Fluency track
  ## Week 1
 
 - [AI Workflow Audit and Tool Setup](https://docs.google.com/document/d/1tkhJb2qUPP4HE2aGjMp6pmzurp8P8xfd7PjjRdGfPGs/edit?usp=sharing)
+- 
 -[Draw the Path: Portfolio Sitemap + Toolkit](https://docs.google.com/document/d/1KYqBR2fGqDvuP0cP8E8nro944RV0AIC78dMcRbki61c/edit?tab=t.0)
-- [What Are You Proving?](https://docs.google.com/document/d/1TjkzlPz7Yiowh5J9Ad-8THjwICkdhv1z2f22UKEZcs/edit?usp=sharing)
+
+- [What Are You Proving?](https://docs.google.com/document/d/1TikzlPz7Yiowh5J9Ad-8THjwlCkdthv1z2f22UKEZcs/edit?tab=t.0)
 
  ## Week 2
 
