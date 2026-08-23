@@ -20,7 +20,7 @@ This page includes the main work I completed during the General AI Fluency track
 
  ## Week 3
 
-- [Consistency, Not Talent (and Frame, Not Upstage)](https://docs.google.com/document/d/1xbzWg19NZwxnFESh2CqwycVi2bSSCNCid3Y52J8Vdog/edit?usp=sharing)
+- [Consistency, Not Talent (and Frame, Not Upstage)](https://docs.google.com/document/d/1xbzWq19NZwxnFESh2CqwycVi2bSSCNCid3Y52J8Vdog/edit?tab=t.0)
 - [Decide Once: Build Your Identity Kit](https://docs.google.com/document/d/1prZ6RsKwjMdjV5Hhrh5ymQdi_e6Tq8N37R0fBfx5Z-8/edit?tab=t.0)
 - [Kill your darlings: Curate Your Images](https://docs.google.com/document/d/1uBIrOu4LesrnxFQFm8B-UVN3rB6Zg9MQJUWUhwq-Qso/edit?tab=t.0)
 - [The Through-Line: Map Content & CTAs](https://docs.google.com/document/d/1k6rL6DQuZUz0IBiZqREoGZCGpJGmTZxpjKXynsGD9lY/edit?tab=t.0#heading=h.uzrz8q3h5iip)
