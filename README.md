@@ -156,3 +156,4 @@ It is not a medical device and should not be used for diagnosis or treatment dec
 - Demo Video: To be added
 - Retrospective: [DentalVision AI Retrospective](https://github.com/engyelgamal18/DentalVision-AI/blob/main/RETROSPECTIVE.md)
 - Build-in-Public Post: [Building DentalVision AI](https://github.com/engyelgamal18/DentalVision-AI/blob/main/BUILD-IN-PUBLIC.md)
+- - Full Track Index: [General AI Fluency Track Deliverables](https://github.com/engyelgamal18/DentalVision-AI/blob/main/TRACK-INDEX.md)
