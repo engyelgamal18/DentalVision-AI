@@ -14,7 +14,7 @@ This page includes the main work I completed during the General AI Fluency track
 
  ## Week 2
 
-- [Frame It as Cases: Work That Speaks for Itself](https://docs.google.com/document/d/1xbzWq19NZwxnFESh2CqwycVi2bSSCNCid3Y52J8Vdog/edit?tab=t.0)
+- [Frame It as Cases: Work That Speaks for Itself](https://docs.google.com/document/d/1r0TcF9kRGQABt2rUx26IsRa-oIQO4t05LczPeXrlhH0/edit?tab=t.0)
 - [The Prompt Ladder](https://docs.google.com/document/d/1ljEmXMvObkMRjdRxRcgS5SB1dU_iq9eisxmaxPF8Z2k/edit?tab=t.0)
 - [Prompting Fundamentals on Real Tasks v2](https://docs.google.com/document/d/16QWjA_bR6K2MCgFXngKWyIokkqbk65qomBXXsltqwo4/edit?tab=t.0)
 
