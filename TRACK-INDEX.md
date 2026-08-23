@@ -9,14 +9,14 @@ This page includes the main work I completed during the General AI Fluency track
  ## Week 1
 
 - [AI Workflow Audit and Tool Setup](https://docs.google.com/document/d/1tkhJb2qUPP4HE2aGjMp6pmzurp8P8xfd7PjjRdGfPGs/edit?usp=sharing)
--[Draw the Path: Portfolio Sitemap + Toolkit](https://docs.google.com/document/d/1KYqBR2fGqDvuP0cP8E8nro944RV0AIC78dMcRbki61c/edit?tab=t.0)
+- [Draw the Path: Portfolio Sitemap + Toolkit](https://docs.google.com/document/d/1KYqBR2fGqDvuP0cP8E8nro944RV0AIC78dMcRbki61c/edit?tab=t.0)
 - [What Are You Proving?](https://docs.google.com/document/d/1TikzlPz7Yiowh5J9Ad-8THjwlCkdthv1z2f22UKEZcs/edit?tab=t.0)
 
  ## Week 2
 
-- [Frame It as Cases: Work That Speaks for Itself](https://docs.google.com/document/d/1r0TcF9kRGQABt2rUx26IsRa-oIQO4t05LczPeXrlhH0/edit?usp=sharing)
-- [The Prompt Ladder](https://docs.google.com/document/d/1IjEmXMvOokMRjdRxRcgS5SB1dU_iq9eisxmaxPF8Z2k/edit?usp=sharing)
-- [Prompting Fundamentals on Real Tasks v2](https://docs.google.com/document/d/16QWjA_bR6K2MCgFXngKWylokkqbk65qomBXXsltqwo4/edit?usp=sharing)
+- [Frame It as Cases: Work That Speaks for Itself](https://docs.google.com/document/d/1r0TcF9kRGQABt2rUx26IsRa-oIQO4t05LczPeXrlhH0/edit?tab=t.0)
+- [The Prompt Ladder](https://docs.google.com/document/d/1ljEmXMvObkMRjdRxRcgS5SB1dU_iq9eisxmaxPF8Z2k/edit?tab=t.0)
+- [Prompting Fundamentals on Real Tasks v2](https://docs.google.com/document/d/16QWjA_bR6K2MCgFXngKWyIokkqbk65qomBXXsltqwo4/edit?tab=t.0)
 
  ## Week 3
 
