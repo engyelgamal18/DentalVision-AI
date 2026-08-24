@@ -153,7 +153,7 @@ It is not a medical device and should not be used for diagnosis or treatment dec
 
 - GitHub Repository: [DentalVision-AI](https://github.com/engyelgamal18/DentalVision-AI)
 - Live Website: [DentalVision AI](https://monumental-phoenix-b42bc8.netlify.app)
-- Demo Video: To be added
+- Demo Video: - Demo Video: [DentalVision AI Demo](https://www.loom.com/share/bce6870d5b344553b65540fc413ff3eb)
 - Retrospective: [DentalVision AI Retrospective](https://github.com/engyelgamal18/DentalVision-AI/blob/main/RETROSPECTIVE.md)
 - Build-in-Public Post: [Building DentalVision AI](https://github.com/engyelgamal18/DentalVision-AI/blob/main/BUILD-IN-PUBLIC.md)
-- - Full Track Index: [General AI Fluency Track Deliverables](https://github.com/engyelgamal18/DentalVision-AI/blob/main/TRACK-INDEX.md)
+- Full Track Index: [General AI Fluency Track Deliverables](https://github.com/engyelgamal18/DentalVision-AI/blob/main/TRACK-INDEX.md)
